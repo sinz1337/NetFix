@@ -1,0 +1,127 @@
+﻿<Window x:Class="NetFix.WindowFolder.AdminFolder.AdminWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:NetFix.WindowFolder.AdminFolder"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        mc:Ignorable="d"
+        Title="Админ" Height="1080" Width="1920"
+        WindowStartupLocation="CenterScreen"
+        WindowState="Maximized"
+        WindowStyle="None"
+        Background="{x:Null}"
+        Icon="/ResourseFolder/ImageFolder/logo2.png">
+    <Border Style="{DynamicResource BorderBack}">
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="10"/>
+                <ColumnDefinition Width="348"/>
+                <ColumnDefinition Width="316"/>
+                <ColumnDefinition Width="393"/>
+                <ColumnDefinition/>
+                <ColumnDefinition Width="197"/>
+                <ColumnDefinition Width="10"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="10"/>
+                <RowDefinition Height="86"/>
+                <RowDefinition/>
+                <RowDefinition Height="10"/>
+            </Grid.RowDefinitions>
+
+            <Image Source="/ResourseFolder/ImageFolder/Vector2.png" 
+                   Grid.Row="2" Grid.ColumnSpan="7" 
+                   Grid.RowSpan="2"
+                   Margin="0,708,0,-27"/>
+
+            <Rectangle Width="1920"
+                       Fill="#A38FFF" 
+                       Grid.ColumnSpan="7" Grid.RowSpan="2"/>
+
+            <Label Content="Список заказов"
+                   Grid.Row="1" Grid.Column="1"
+                   FontFamily="Verdana"
+                   FontSize="30"
+                   VerticalAlignment="Top"
+                   HorizontalAlignment="Left"
+                   MouseLeftButtonDown="Image_MouseLeftButtonDown" 
+                   Margin="22,12,0,0"/>
+
+            <Label Content="Список сотрудников"
+                   Grid.Row="1" Grid.Column="1"
+                   FontFamily="Verdana"
+                   FontSize="30"
+                   VerticalAlignment="Top"
+                   HorizontalAlignment="Left"
+                   MouseLeftButtonDown="Image_MouseLeftButtonDown_1" 
+                   Grid.ColumnSpan="2" Margin="334,12,0,0"/>
+
+            <Label Content="Добавление заказа"
+                   Grid.Row="1" Grid.Column="3"
+                   FontFamily="Verdana"
+                   FontSize="30"
+                   VerticalAlignment="Top"
+                   HorizontalAlignment="Left"
+                   MouseLeftButtonDown="Image_MouseLeftButtonDown_2" 
+                   Margin="49,12,0,0"/>
+
+            <Label Content="Список услуг"
+                   Grid.Row="1" Grid.Column="4"
+                   FontFamily="Verdana"
+                   FontSize="30"
+                   VerticalAlignment="Top"
+                   HorizontalAlignment="Left"
+                   MouseLeftButtonDown="listservis_MouseLeftButtonDown" 
+                   Margin="34,12,0,0"/>
+
+            <Label Content="Добавление сотрудника"
+                   Grid.Row="1" Grid.Column="4"
+                   FontFamily="Verdana"
+                   FontSize="30"
+                   VerticalAlignment="Top"
+                   HorizontalAlignment="Left"
+                   MouseLeftButtonDown="AddStaff_MouseLeftButtonDown" 
+                   Margin="298,12,0,0" Grid.ColumnSpan="2"/>
+
+            <Rectangle Width="1747" Height="879"
+                       Style="{DynamicResource Rectangle}"
+                       Fill="#A38FFF" 
+                       Grid.Column="1" 
+                       Grid.ColumnSpan="5" Grid.Row="2"/>
+
+            <Button x:Name="CloseBtn"
+                Grid.Column="5" Grid.Row="1"
+                Width="120" Height="48"
+                Content="Выйти"
+                Foreground="Black"
+                Background="#FFEAFF"
+                FontSize="18"
+                FontFamily="Verdana"
+                HorizontalAlignment="Left"
+                materialDesign:ButtonAssist.CornerRadius="30"
+                Style="{StaticResource MaterialDesignRaisedLightButton}"
+                Click="CloseBtn_Click" Margin="77,13,0,25" />
+
+            <Grid Grid.Column="1"
+                  Grid.Row="2" 
+                  Grid.ColumnSpan="5" 
+                  Margin="108,76,98,73">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="10"/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition Width="10"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="10"/>
+                    <RowDefinition/>
+                    <RowDefinition Height="10"/>
+                </Grid.RowDefinitions>
+                <Frame x:Name="MainFrame"
+                       Grid.Column="1" Grid.Row="1"
+                       NavigationUIVisibility="Hidden"/>
+            </Grid>
+
+        </Grid>
+    </Border>
+</Window>

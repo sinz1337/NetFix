@@ -1,0 +1,94 @@
+﻿<Page x:Class="NetFix.PageFolder.EditStaffPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:NetFix.PageFolder"
+      xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+      mc:Ignorable="d" 
+      d:DesignHeight="870" d:DesignWidth="1745"
+      Title="Редактироване сотрудника"
+      Loaded="Page_Loaded">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="10"/>
+            <ColumnDefinition Width="365"/>
+            <ColumnDefinition Width="475"/>
+            <ColumnDefinition Width="510"/>
+            <ColumnDefinition Width="385"/>
+            <ColumnDefinition Width="10"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="10"/>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="90"/>
+            <RowDefinition Height="170"/>
+            <RowDefinition Height="170"/>
+            <RowDefinition Height="170"/>
+            <RowDefinition/>
+            <RowDefinition Height="10"/>
+        </Grid.RowDefinitions>
+
+        <Label x:Name="RedLB"
+               Grid.Column="2" Grid.Row="2"
+               Grid.ColumnSpan="2"
+               Content="Редактирование сотрудника"
+               Style="{DynamicResource LabelLogo}"
+               FontSize="55"/>
+
+        <TextBox x:Name="FIOTB"
+                 Grid.Column="2" Grid.Row="3"
+                 Grid.ColumnSpan="2"
+                 Style="{DynamicResource TextBox}"
+                 BorderBrush="Black"
+                 FontFamily="Verdana"
+                 BorderThickness="3"
+                 Width="490" Height="86"
+                 materialDesign:HintAssist.Hint="ФИО"    
+                 materialDesign:HintAssist.FloatingOffset="10,-36"
+                 materialDesign:HintAssist.Background="#A38FFF"
+                 materialDesign:HintAssist.Foreground="Black"
+                 materialDesign:TextFieldAssist.TextFieldCornerRadius="10"/>
+
+        <TextBox x:Name="PhoneTB"
+                 Grid.Column="2" Grid.Row="5"
+                 Grid.ColumnSpan="2"
+                 Style="{DynamicResource TextBox}"
+                 BorderBrush="Black"
+                 FontFamily="Verdana"
+                 BorderThickness="3"
+                 Width="490" Height="86"
+                 materialDesign:HintAssist.Hint="Номер телефона"    
+                 materialDesign:HintAssist.FloatingOffset="10,-36"
+                 materialDesign:HintAssist.Background="#A38FFF"
+                 materialDesign:HintAssist.Foreground="Black"
+                 materialDesign:TextFieldAssist.TextFieldCornerRadius="10"/>
+
+        <Button x:Name="EditBtn"
+                Grid.Column="2" Grid.Row="6"
+                Grid.ColumnSpan="2"
+                Width="389" Height="86"
+                Content="Сохранить"
+                Foreground="Black"
+                Background="#FFEAFF"
+                FontSize="50"
+                FontFamily="Verdana"
+                VerticalAlignment="Top"
+                materialDesign:ButtonAssist.CornerRadius="40"
+                Style="{StaticResource MaterialDesignRaisedLightButton}" 
+                Click="EditBtn_Click"/>
+
+        <DatePicker x:Name="DateDP"
+                    Grid.Column="2" Grid.Row="4"
+                    Grid.ColumnSpan="2"
+                    Width="490" Height="86"
+                    Foreground="Black"
+                    materialDesign:DatePickerAssist.OutlinedBorderInactiveThickness="3"
+                    FontFamily="Verdana"
+                    FontSize="30"
+                    materialDesign:TextFieldAssist.TextFieldCornerRadius="10"
+                    Style="{StaticResource MaterialDesignOutlinedDatePicker}"/>
+
+    </Grid>
+</Page>
