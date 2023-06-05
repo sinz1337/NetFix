@@ -119,9 +119,9 @@ namespace NetFix.WindowFolder
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
-            LoginTB.Focus();
-            //LoginTB.Text = "admin";
-            //PasswordPB.Password = "admin";
+            //LoginTB.Focus();
+            LoginTB.Text = "user";
+            PasswordPB.Password = "user";
         }
     }
 }

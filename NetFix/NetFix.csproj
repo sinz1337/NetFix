@@ -238,6 +238,12 @@
     <Resource Include="ResourseFolder\ImageFolder\ava.png" />
   </ItemGroup>
   <ItemGroup>
+    <Resource Include="ResourseFolder\ImageFolder\server.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="ResourseFolder\ImageFolder\box.png" />
+  </ItemGroup>
+  <ItemGroup>
     <Resource Include="ResourseFolder\ImageFolder\computer.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

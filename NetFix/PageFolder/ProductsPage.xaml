@@ -35,6 +35,7 @@
 
         <Rectangle Width="350" Height="700"
                    Grid.Column="2" Grid.Row="1"
+                   Grid.RowSpan="3"
                    Fill="#5F53BA"
                    Opacity="0.3"
                    Style="{DynamicResource Rectangle}" 
@@ -42,8 +43,38 @@
 
         <Rectangle Width="350" Height="700"
                    Grid.Column="3" Grid.Row="1"
+                   Grid.RowSpan="3"
                    Fill="#5F53BA"
+                   Opacity="0.5"
+                   HorizontalAlignment="Center"
+                   VerticalAlignment="Center"
+                   Style="{DynamicResource Rectangle}" />
+
+        <Image Source="/ResourseFolder/ImageFolder/computer.png" 
+               Grid.Column="1" Grid.Row="1"
+               Width="350" Height="280"
+               VerticalAlignment="Top"
+               Margin="0,77,0,0" Grid.RowSpan="2"/>
+
+        <Image Source="/ResourseFolder/ImageFolder/server.png" 
+               Grid.Column="2" Grid.Row="1"
+               Width="350" Height="280"
+               VerticalAlignment="top"
+               Margin="0,77,0,0" Grid.RowSpan="2"/>
+
+        <Image Source="/ResourseFolder/ImageFolder/box.png" 
+               Grid.Column="3" Grid.Row="1"
+               Width="350" Height="280"
+               VerticalAlignment="Top" 
+               Margin="0,77,0,0" Grid.RowSpan="2"/>
+
+        <Rectangle Width="350" Height="386"
+                   Grid.Column="3" Grid.Row="2"
+                   Grid.RowSpan="2"
+                   Fill="#6847FF"
                    Opacity="0.3"
+                   HorizontalAlignment="Center"
+                   VerticalAlignment="Top"
                    Style="{DynamicResource Rectangle}" 
                    Margin="62,60,63,90" Grid.RowSpan="3"/>
 
