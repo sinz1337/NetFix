@@ -8,7 +8,7 @@ namespace NetFix.ClassFolder
 {
     internal class ConnectClass
     {
-        public static string ConnectString = @"Data Source=DESKTOP-QV173LU\SQLEXPRESS;
+        public static string ConnectString = @"Data Source=SINZ\SQLEXPRESS;
                                                Initial Catalog=NetFix;
                                                Integrated Security=True";
 
