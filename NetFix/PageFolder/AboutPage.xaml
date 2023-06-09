@@ -7,9 +7,55 @@
       xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
       mc:Ignorable="d" 
       d:DesignHeight="870" d:DesignWidth="1745"
-      Title="А Нас">
+      Title="О Нас">
 
     <Grid>
-        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="110"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="650"/>
+            <RowDefinition/>
+            <RowDefinition Height="90"/>
+        </Grid.RowDefinitions>
+
+        <Rectangle Fill="#A38FFF"
+                   Style="{DynamicResource Rectangle}"
+                   Grid.RowSpan="3"
+                   Grid.ColumnSpan="3"/>
+
+        <Image Source="/ResourseFolder/ImageFolder/about.png" 
+               Width="1436" Height="598"
+               Grid.ColumnSpan="3"/>
+
+        <Image Source="/ResourseFolder/ImageFolder/logo3.png" 
+               Width="104" Height="104"
+               Grid.Column="1" Grid.Row="1"/>
+
+        <Label Content="Наши соц.сети:" 
+               Grid.Row="2"
+               Style="{DynamicResource NormalLabel}" 
+               HorizontalAlignment="Right"/>
+
+        <Label Content="Telegram"
+               Style="{DynamicResource NormalLabel}"
+               Width="200"
+               Grid.Row="2" 
+               Grid.Column="1" 
+               Grid.ColumnSpan="2"
+               HorizontalAlignment="Left"
+               MouseLeftButtonDown="Label_MouseLeftButtonDown"/>
+
+        <Label Content="Telegram"
+               Style="{DynamicResource NormalLabel}"
+               Width="200"
+               Grid.Row="2" 
+               Grid.Column="2"
+               HorizontalAlignment="Left"
+               MouseLeftButtonDown="Label_MouseLeftButtonDown_1" 
+               Margin="67,0,0,0"/>
+
     </Grid>
 </Page>

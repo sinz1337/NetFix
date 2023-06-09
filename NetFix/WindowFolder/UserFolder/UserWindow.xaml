@@ -80,10 +80,10 @@
                 </Image.ContextMenu>
             </Image>
 
-            <!--<Image Source="/ResourseFolder/ImageFolder/Vector2.png" 
+            <Image Source="/ResourseFolder/ImageFolder/Vector2.png" 
                    Grid.Row="2" Grid.ColumnSpan="8" 
                    Grid.RowSpan="2"
-                   Margin="0,708,0,-34"/>-->
+                   Margin="0,708,0,-34"/>
 
             <Grid Grid.Column="1"
                   Grid.Row="2" 

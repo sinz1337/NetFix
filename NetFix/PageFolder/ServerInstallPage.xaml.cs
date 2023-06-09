@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -13,27 +12,29 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using NetFix.ClassFolder;
 
 namespace NetFix.PageFolder
 {
     /// <summary>
-    /// Логика взаимодействия для ContactsPage.xaml
+    /// Логика взаимодействия для ServerInstallPage.xaml
     /// </summary>
-    public partial class ContactsPage : Page
+    public partial class ServerInstallPage : Page
     {
-        public ContactsPage()
+        public ServerInstallPage()
         {
             InitializeComponent();
         }
 
         private void Image_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
-            Process.Start("https://yandex.ru/maps/-/CCU1JDafKA");
+            this.NavigationService.Navigate(new Uri("PageFolder/ServisePage.xaml", UriKind.Relative));
         }
 
-        private void Image_MouseLeftButtonDown_1(object sender, MouseButtonEventArgs e)
+        private void BuyBtn_Click(object sender, RoutedEventArgs e)
         {
-            Process.Start("https://yandex.ru/maps/-/CCU1JDuACC");
+            MBClass.InfoMB("Вы успешно оформили заказ!");
+            this.NavigationService.Navigate(new Uri("PageFolder/ServisePage.xaml", UriKind.Relative));
         }
     }
 }

@@ -10,6 +10,142 @@
       Title="Список услуг">
 
     <Grid>
-        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="10"/>
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition Width="10"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="10"/>
+            <RowDefinition Height="300"/>
+            <RowDefinition Height="400"/>
+            <RowDefinition/>
+            <RowDefinition Height="10"/>
+        </Grid.RowDefinitions>
+
+        <Rectangle Width="400" Height="700"
+                   Grid.Column="1" Grid.Row="1"
+                   Grid.RowSpan="3"
+                   Fill="#A38FFF"
+                   Style="{DynamicResource Rectangle}"/>
+
+        <Rectangle Width="400" Height="700"
+                   Grid.Column="2" Grid.Row="1"
+                   Grid.RowSpan="3"
+                   Fill="#A38FFF"
+                   Style="{DynamicResource Rectangle}" />
+
+        <Rectangle Width="400" Height="700"
+                   Grid.Column="3" Grid.Row="1"
+                   Grid.RowSpan="3"
+                   Fill="#A38FFF"
+                   Style="{DynamicResource Rectangle}" />
+
+        <Image Source="/ResourseFolder/ImageFolder/serverinstall.png" 
+               Grid.Column="1" Grid.Row="1" 
+               Width="308" Height="306"
+               Margin="0,102,0,298" 
+               Grid.RowSpan="2"/>
+
+        <Image Source="/ResourseFolder/ImageFolder/computerinstall.png" 
+               Grid.Column="2" Grid.Row="1" 
+               Width="308" Height="306"
+               Margin="0,102,0,298" 
+               Grid.RowSpan="2"/>
+
+        <Image Source="/ResourseFolder/ImageFolder/computerwash.png" 
+               Grid.Column="3" Grid.Row="1" 
+               Width="308" Height="306"
+               Margin="0,102,0,298" 
+               Grid.RowSpan="2"/>
+
+        <TextBlock Grid.Row="2" Grid.Column="1"
+                   Style="{DynamicResource TextBlock}"
+                   Width="370" Height="90"
+                   TextAlignment="Center" 
+                   Margin="0,122,0,0" 
+                   VerticalAlignment="Top">
+            <Run Text="Установка/Настройка"/>
+            <LineBreak/>
+            <Run Text="сервера"/>
+        </TextBlock>
+
+        <TextBlock Grid.Row="2" Grid.Column="2"
+                   Style="{DynamicResource TextBlock}"
+                   Width="370" Height="90"
+                   TextAlignment="Center" 
+                   Margin="0,122,0,0" 
+                   VerticalAlignment="Top">
+            <Run Text="Сборка"/>
+            <LineBreak/>
+            <Run Text="компьютера"/>
+        </TextBlock>
+
+        <TextBlock Grid.Row="2" Grid.Column="3"
+                   Style="{DynamicResource TextBlock}"
+                   Width="370" Height="120"
+                   TextAlignment="Center" 
+                   Margin="0,122,0,0" 
+                   VerticalAlignment="Top">
+            <Run Text="Обслуживание"/>
+            <LineBreak/>
+            <Run Text="Персонального"/>
+            <LineBreak/>
+            <Run Text="компьютера"/>
+        </TextBlock>
+
+        <Label Content="Цена : 10.000$"
+               Grid.Row="2" Grid.Column="1"
+               VerticalAlignment="Bottom"
+               Width="344"
+               FontWeight="Bold"
+               Style="{DynamicResource NormalLabel}"/>
+
+        <Label Content="Цена : 5.000$"
+               Grid.Row="2" Grid.Column="2"
+               VerticalAlignment="Bottom"
+               Width="344"
+               FontWeight="Bold"
+               Style="{DynamicResource NormalLabel}"/>
+
+        <Label Content="Цена : 1.000$"
+               Grid.Row="2" Grid.Column="3"
+               VerticalAlignment="Bottom"
+               Width="344"
+               FontWeight="Bold"
+               Style="{DynamicResource NormalLabel}"/>
+
+        <Button x:Name="AboutBtn"
+                Content="Подробнее"
+                Grid.Column="1" Grid.Row="3"
+                Width="207" Height="50"
+                Background="#F7F2FA"
+                Margin="0,0,0,80"
+                materialDesign:ButtonAssist.CornerRadius="30"
+                Style="{StaticResource MaterialDesignRaisedLightButton}" 
+                Click="AboutBtn_Click"/>
+
+        <Button x:Name="About1Btn"
+                Content="Подробнее"
+                Grid.Column="2" Grid.Row="3"
+                Width="207" Height="50"
+                Background="#F7F2FA"
+                Margin="0,0,0,80"
+                materialDesign:ButtonAssist.CornerRadius="30"
+                Style="{StaticResource MaterialDesignRaisedLightButton}" 
+                Click="About1Btn_Click"/>
+
+        <Button x:Name="About2Btn"
+                Content="Подробнее"
+                Grid.Column="3" Grid.Row="3"
+                Width="207" Height="50"
+                Background="#F7F2FA"
+                Margin="0,0,0,80"
+                materialDesign:ButtonAssist.CornerRadius="30"
+                Style="{StaticResource MaterialDesignRaisedLightButton}" 
+                Click="About2Btn_Click"/>
+
     </Grid>
 </Page>

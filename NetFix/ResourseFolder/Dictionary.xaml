@@ -54,6 +54,15 @@
         <Setter Property="HorizontalAlignment" Value="Center"/>
     </Style>
     
+    <!--TextBlock-->
+    <Style TargetType="TextBlock" x:Key="TextBlock">
+        <Setter Property="FontFamily" Value="Verdana"/>
+        <Setter Property="FontSize" Value="30"/>
+        <Setter Property="FontWeight" Value="Regular"/>
+        <Setter Property="Foreground" Value="Black"/>
+        <Setter Property="VerticalAlignment" Value="Center"/>
+    </Style>
+    
     <!--Rectangle-->
     <Style TargetType="Rectangle"
            x:Key="Rectangle">

@@ -1,6 +1,6 @@
-﻿using System;
+﻿using NetFix.ClassFolder;
+using System;
 using System.Collections.Generic;
-using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -17,23 +17,24 @@ using System.Windows.Shapes;
 namespace NetFix.PageFolder
 {
     /// <summary>
-    /// Логика взаимодействия для ContactsPage.xaml
+    /// Логика взаимодействия для ComputerInstallPage.xaml
     /// </summary>
-    public partial class ContactsPage : Page
+    public partial class ComputerInstallPage : Page
     {
-        public ContactsPage()
+        public ComputerInstallPage()
         {
             InitializeComponent();
         }
 
         private void Image_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
-            Process.Start("https://yandex.ru/maps/-/CCU1JDafKA");
+            this.NavigationService.Navigate(new Uri("PageFolder/ServisePage.xaml", UriKind.Relative));
         }
 
-        private void Image_MouseLeftButtonDown_1(object sender, MouseButtonEventArgs e)
+        private void BuyBtn_Click(object sender, RoutedEventArgs e)
         {
-            Process.Start("https://yandex.ru/maps/-/CCU1JDuACC");
+            MBClass.InfoMB("Вы успешно оформили заказ!");
+            this.NavigationService.Navigate(new Uri("PageFolder/ServisePage.xaml", UriKind.Relative));
         }
     }
 }

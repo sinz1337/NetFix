@@ -10,6 +10,158 @@
       Title="ContactsPage">
 
     <Grid>
-        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="900"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <Rectangle Fill="#A38FFF"
+                   Style="{DynamicResource Rectangle}"
+                   Grid.RowSpan="2"
+                   Grid.ColumnSpan="3"/>
+
+        <Image Source="/ResourseFolder/ImageFolder/SPB.png" 
+               Width="755" Height="315"
+               MouseLeftButtonDown="Image_MouseLeftButtonDown"/>
+
+        <Image Source="/ResourseFolder/ImageFolder/MSK.png" 
+               Width="755" Height="315"
+               Grid.Row="1"
+               MouseLeftButtonDown="Image_MouseLeftButtonDown_1"/>
+
+        <Grid Grid.Column="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="10"/>
+                <ColumnDefinition Width="90"/>
+                <ColumnDefinition/>
+                <ColumnDefinition Width="10"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="10"/>
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="110"/>
+                <RowDefinition Height="110"/>
+                <RowDefinition Height="110"/>
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="10"/>
+            </Grid.RowDefinitions>
+
+            <Image Source="/ResourseFolder/ImageFolder/adres.png" 
+                   Grid.Column="1" Grid.Row="2"
+                   Height="51" Width="49"/>
+
+            <Image Source="/ResourseFolder/ImageFolder/mail.png" 
+                   Grid.Column="1" Grid.Row="3"
+                   Height="30" Width="56"/>
+
+            <Image Source="/ResourseFolder/ImageFolder/phone.png" 
+                   Grid.Column="1" Grid.Row="4"
+                   Height="47" Width="48"/>
+
+            <TextBlock
+                Grid.Row="2" Grid.Column="2"
+                Width="535" Height="100"
+                HorizontalAlignment="Left">
+                    <Run Text="Санкт-Петербург"
+                         FontSize="45"/>
+                    <LineBreak/>
+                    <Run Text="Большая Конюшенная улица, 13"
+                         FontSize="30"/>
+            </TextBlock>
+
+            <TextBlock
+                Grid.Row="3" Grid.Column="2"
+                Width="535" Height="100"
+                HorizontalAlignment="Left">
+                    <Run Text="Почта"
+                         FontSize="45"/>
+                    <LineBreak/>
+                    <Run Text="netfixspb@store.spb"
+                         FontSize="30"/>
+            </TextBlock>
+
+            <TextBlock
+                Grid.Row="4" Grid.Column="2"
+                Width="535" Height="100"
+                HorizontalAlignment="Left">
+                    <Run Text="Телефон"
+                         FontSize="45"/>
+                    <LineBreak/>
+                    <Run Text="+7(916)533 16-70"
+                         FontSize="30"/>
+            </TextBlock>
+
+        </Grid>
+
+        <Grid Grid.Column="2"
+              Grid.Row="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="10"/>
+                <ColumnDefinition Width="90"/>
+                <ColumnDefinition/>
+                <ColumnDefinition Width="10"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="10"/>
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="110"/>
+                <RowDefinition Height="110"/>
+                <RowDefinition Height="110"/>
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="10"/>
+            </Grid.RowDefinitions>
+
+            <Image Source="/ResourseFolder/ImageFolder/adres.png" 
+                   Grid.Column="1" Grid.Row="2"
+                   Height="51" Width="49"/>
+
+            <Image Source="/ResourseFolder/ImageFolder/mail.png" 
+                   Grid.Column="1" Grid.Row="3"
+                   Height="30" Width="56"/>
+
+            <Image Source="/ResourseFolder/ImageFolder/phone.png" 
+                   Grid.Column="1" Grid.Row="4"
+                   Height="47" Width="48"/>
+
+            <TextBlock
+                Grid.Row="2" Grid.Column="2"
+                Width="535" Height="100"
+                HorizontalAlignment="Left">
+                    <Run Text="Москва"
+                         FontSize="45"/>
+                    <LineBreak/>
+                    <Run Text="улица Архитектора Власова, 5к2"
+                         FontSize="30"/>
+            </TextBlock>
+
+            <TextBlock
+                Grid.Row="3" Grid.Column="2"
+                Width="535" Height="100"
+                HorizontalAlignment="Left">
+                    <Run Text="Почта"
+                         FontSize="45"/>
+                    <LineBreak/>
+                    <Run Text="netfixmsk@gmail.com"
+                         FontSize="30"/>
+            </TextBlock>
+
+            <TextBlock
+                Grid.Row="4" Grid.Column="2"
+                Width="535" Height="100"
+                HorizontalAlignment="Left">
+                    <Run Text="Телефон"
+                         FontSize="45"/>
+                    <LineBreak/>
+                    <Run Text="+7(926)036 31-37"
+                         FontSize="30"/>
+            </TextBlock>
+
+
+        </Grid>
+
     </Grid>
 </Page>

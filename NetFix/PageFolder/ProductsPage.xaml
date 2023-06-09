@@ -28,22 +28,19 @@
         <Rectangle Width="400" Height="700"
                    Grid.Column="1" Grid.Row="1"
                    Grid.RowSpan="3"
-                   Fill="#5F53BA"
-                   Opacity="0.5"
+                   Fill="#988AFF"
                    Style="{DynamicResource Rectangle}"/>
 
         <Rectangle Width="400" Height="700"
                    Grid.Column="2" Grid.Row="1"
                    Grid.RowSpan="3"
-                   Fill="#5F53BA"
-                   Opacity="0.5"
+                   Fill="#988AFF"
                    Style="{DynamicResource Rectangle}" />
 
         <Rectangle Width="400" Height="700"
                    Grid.Column="3" Grid.Row="1"
                    Grid.RowSpan="3"
-                   Fill="#5F53BA"
-                   Opacity="0.5"
+                   Fill="#988AFF"
                    Style="{DynamicResource Rectangle}" />
 
         <Image Source="/ResourseFolder/ImageFolder/computer.png" 
@@ -67,8 +64,7 @@
         <Rectangle Width="350" Height="386"
                    Grid.Column="1" Grid.Row="2"
                    Grid.RowSpan="2"
-                   Fill="#6847FF"
-                   Opacity="0.3"
+                   Fill="#C9BDFF"
                    HorizontalAlignment="Center"
                    VerticalAlignment="Top"
                    Style="{DynamicResource Rectangle}" 
@@ -77,8 +73,7 @@
         <Rectangle Width="350" Height="386"
                    Grid.Column="2" Grid.Row="2"
                    Grid.RowSpan="2"
-                   Fill="#6847FF"
-                   Opacity="0.3"
+                   Fill="#C9BDFF"
                    HorizontalAlignment="Center"
                    VerticalAlignment="Top"
                    Style="{DynamicResource Rectangle}" 
@@ -87,12 +82,115 @@
         <Rectangle Width="350" Height="386"
                    Grid.Column="3" Grid.Row="2"
                    Grid.RowSpan="2"
-                   Fill="#6847FF"
-                   Opacity="0.3"
+                   Fill="#C9BDFF"
                    HorizontalAlignment="Center"
                    VerticalAlignment="Top"
                    Style="{DynamicResource Rectangle}" 
                    Margin="0,66,0,0"/>
+
+        <Label Content="Квантовый компьютер"
+               Grid.Row="2" Grid.Column="1"
+               Width="330" Height="44"
+               FontSize="24"
+               FontWeight="Bold"
+               Style="{DynamicResource NormalLabel}" 
+               Margin="0,74,0,0" 
+               VerticalAlignment="Top"/>
+
+        <Label Content="Сервер SuperEXT 30"
+               Grid.Row="2" Grid.Column="2"
+               Width="330" Height="44"
+               FontSize="25"
+               FontWeight="Bold"
+               Style="{DynamicResource NormalLabel}" 
+               Margin="0,74,0,0" 
+               VerticalAlignment="Top"/>
+
+        <Label Content="Дома удобнее"
+               Grid.Row="2" Grid.Column="3"
+               Width="330" Height="44"
+               FontSize="25"
+               FontWeight="Bold"
+               Style="{DynamicResource NormalLabel}" 
+               Margin="0,74,0,0" 
+               VerticalAlignment="Top"/>
+
+        <Label Content="Цена: 100.000$"
+               Grid.Row="3" Grid.Column="1"
+               Width="330" Height="44"
+               FontSize="25"
+               FontWeight="Bold"
+               Style="{DynamicResource NormalLabel}" 
+               Margin="0,8,0,0" 
+               VerticalAlignment="Top"/>
+
+        <Label Content="Цена: 20.000$"
+               Grid.Row="3" Grid.Column="2"
+               Width="330" Height="44"
+               FontSize="25"
+               FontWeight="Bold"
+               Style="{DynamicResource NormalLabel}" 
+               Margin="0,8,0,0" 
+               VerticalAlignment="Top"/>
+
+        <Label Content="Цена: 1.000$"
+               Grid.Row="3" Grid.Column="3"
+               Width="330" Height="44"
+               FontSize="25"
+               FontWeight="Bold"
+               Style="{DynamicResource NormalLabel}" 
+               Margin="0,8,0,0" 
+               VerticalAlignment="Top"/>
+
+        <TextBlock
+            Grid.Row="2" Grid.Column="1"
+            Width="275" Height="100"
+            FontSize="25" Margin="0,124,0,176">
+            <Run Text="В продажу поступили"/>
+            <LineBreak/>
+            <Run Text="первые в мире супер"/>
+            <LineBreak/>
+            <Run Text="мощные компьютеры"/>
+        </TextBlock>
+
+        <TextBlock
+            Grid.Row="2" Grid.Column="2"
+            Width="320" Height="250"
+            FontSize="25" Margin="0,122,0,28" >
+            <Run Text="Это прорыв в технологиях"/>
+            <LineBreak/>
+            <Run Text="Сервер SuperEXT 30"
+                 FontSize="20"/>
+            <LineBreak/>
+            <Run Text="(4x CPU Intel Ultra 8280"
+                 FontSize="20"/>
+            <LineBreak/>
+            <Run Text="(37GHz, 38.5M Cache, 100 cores)/"
+                 FontSize="20"/>
+            <LineBreak/>
+            <Run Text="12x Kingston DDR8 32GB "
+                 FontSize="20"/>
+            <LineBreak/>
+            <Run Text="10000MHz"
+                 FontSize="20"/>
+            <LineBreak/>
+            <Run Text="ECC Registered/ 12x Samsung "
+                 FontSize="20"/>
+            <LineBreak/>
+            <Run Text="DDR8)"
+                 FontSize="20"/>
+        </TextBlock>
+
+        <TextBlock
+            Grid.Row="2" Grid.Column="3"
+            Width="300" Height="100"
+            FontSize="25" Margin="0,124,0,176">
+            <Run Text="Новый серверный шкаф "/>
+            <LineBreak/>
+            <Run Text="для дома. Сделай свою"/>
+            <LineBreak/>
+            <Run Text="работу удобнее"/>
+        </TextBlock>
 
     </Grid>
 </Page>

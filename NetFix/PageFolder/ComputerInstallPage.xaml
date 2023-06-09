@@ -1,0 +1,79 @@
+﻿<Page x:Class="NetFix.PageFolder.ComputerInstallPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:NetFix.PageFolder"
+      xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+      mc:Ignorable="d" 
+      d:DesignHeight="870" d:DesignWidth="1745"
+      Title="Сборка компьютера">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="10"/>
+            <ColumnDefinition Width="630"/>
+            <ColumnDefinition />
+            <ColumnDefinition Width="60"/>
+            <ColumnDefinition Width="10"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="10"/>
+            <RowDefinition Height="60"/>
+            <RowDefinition Height="200"/>
+            <RowDefinition/>
+            <RowDefinition Height="10"/>
+        </Grid.RowDefinitions>
+
+        <Rectangle Fill="#A38FFF" 
+                   Grid.ColumnSpan="5" Grid.RowSpan="5"
+                   Style="{DynamicResource Rectangle}"/>
+
+        <Image Source="/ResourseFolder/ImageFolder/exit1.png" 
+               Grid.Column="3" Grid.Row="1"
+               Height="50" Width="50"
+               MouseLeftButtonDown="Image_MouseLeftButtonDown"/>
+
+        <Label Content="Информация"
+               Grid.Row="2" Grid.Column="2"
+               Width="240" Height="50"
+               VerticalAlignment="Top"
+               FontWeight="Bold"
+               Style="{DynamicResource NormalLabel}"/>
+
+        <Label
+            Content="Сборка компьютера в Москве"
+            Grid.Row="2" Grid.Column="2"
+            Width="900" Height="100"
+            FontSize="40"
+            Style="{DynamicResource NormalLabel}"/>
+
+        <Image Source="/ResourseFolder/ImageFolder/computerabout.png" 
+               Grid.Column="2" Grid.Row="3"
+               Width="750" Height="400"
+               VerticalAlignment="Top"/>
+
+        <Image Source="/ResourseFolder/ImageFolder/computerinstall.png"
+               Grid.Column="1" Grid.Row="2"
+               Grid.RowSpan="3"
+               VerticalAlignment="Top"
+               Width="450" Height="450"/>
+
+        <Label Content="Цена : 5.000$"
+               Grid.Row="3" Grid.Column="1"
+               Width="350" Height="55"
+               FontWeight="Bold"
+               Style="{DynamicResource NormalLabel}"/>
+
+        <Button x:Name="BuyBtn"
+                Content="Оформить"
+                Grid.Column="1" Grid.Row="3"
+                Width="207" Height="67"
+                Background="#F7F2FA"
+                Margin="0,329,0,0"
+                VerticalAlignment="Top"
+                materialDesign:ButtonAssist.CornerRadius="40"
+                Style="{StaticResource MaterialDesignRaisedLightButton}" 
+                Click="BuyBtn_Click"/>
+    </Grid>
+</Page>

@@ -84,6 +84,12 @@
     <Compile Include="PageFolder\AddUserPage.xaml.cs">
       <DependentUpon>AddUserPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="PageFolder\ComputerInstallPage.xaml.cs">
+      <DependentUpon>ComputerInstallPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PageFolder\ComputerWashPage.xaml.cs">
+      <DependentUpon>ComputerWashPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="PageFolder\ContactsPage.xaml.cs">
       <DependentUpon>ContactsPage.xaml</DependentUpon>
     </Compile>
@@ -98,6 +104,9 @@
     </Compile>
     <Compile Include="PageFolder\ProductsPage.xaml.cs">
       <DependentUpon>ProductsPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PageFolder\ServerInstallPage.xaml.cs">
+      <DependentUpon>ServerInstallPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="PageFolder\ServisePage.xaml.cs">
       <DependentUpon>ServisePage.xaml</DependentUpon>
@@ -158,6 +167,14 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="PageFolder\ComputerInstallPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="PageFolder\ComputerWashPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="PageFolder\ContactsPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -175,6 +192,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="PageFolder\ProductsPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="PageFolder\ServerInstallPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -245,6 +266,36 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="ResourseFolder\ImageFolder\computer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="ResourseFolder\ImageFolder\MSK.png" />
+    <Resource Include="ResourseFolder\ImageFolder\SPB.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="ResourseFolder\ImageFolder\adres.png" />
+    <Resource Include="ResourseFolder\ImageFolder\mail.png" />
+    <Resource Include="ResourseFolder\ImageFolder\phone.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="ResourseFolder\ImageFolder\computerinstall.png" />
+    <Resource Include="ResourseFolder\ImageFolder\computerwash.png" />
+    <Resource Include="ResourseFolder\ImageFolder\serverinstall.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="ResourseFolder\ImageFolder\about.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="ResourseFolder\ImageFolder\logo3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="ResourseFolder\ImageFolder\exit1.png" />
+    <Resource Include="ResourseFolder\ImageFolder\serveraboutpng.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="ResourseFolder\ImageFolder\computerabout.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="ResourseFolder\ImageFolder\washabout.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\MaterialDesignThemes.4.9.0\build\MaterialDesignThemes.targets" Condition="Exists('..\packages\MaterialDesignThemes.4.9.0\build\MaterialDesignThemes.targets')" />
